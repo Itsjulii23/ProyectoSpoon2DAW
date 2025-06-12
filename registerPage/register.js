@@ -49,7 +49,7 @@ function cargarHTML() {
             </div>
             <div class="form-row">
                 <label for="regEmail">Email</label>
-                <input type="email" id="regEmail" name="regEmail" required/>
+                <input type="email" id="regEmail" name="regEmail" autocomplete="username" required/>
             </div>
             <div class="form-row">
                 <label for="regBirthdate">Fecha de nacimiento</label>
@@ -57,11 +57,11 @@ function cargarHTML() {
             </div>
             <div class="form-row">
                 <label for="regPass">Contraseña</label>
-                <input type="password" id="regPass" name="regPass" required/>
+                <input type="password" id="regPass" name="regPass" autocomplete="new-password" required/>
             </div>
             <div class="form-row">
                 <label for="regPassConf">Confirmar Contraseña</label>
-                <input type="password" id="regPassConf" name="regPassConf" required/>
+                <input type="password" id="regPassConf" name="regPassConf" autocomplete="new-password" required/>
             </div>
             <button type="button" id="btnReservar">Registrate</button>
         </form>

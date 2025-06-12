@@ -40,11 +40,11 @@ function cargarHTML() {
             <h3>Edita tu Usuario</h3>
             <div class="form-row">
                 <label for="upUser">Usuario</label>
-                <input type="text" id="upUser" name="upUser"/>
+                <input type="text" id="upUser" name="upUser" autocomplete="username"/>
             </div>
             <div class="form-row">
                 <label for="upPass">Cambiar Contraseña</label>
-                <input type="password" id="upPass" name="upPass"/>
+                <input type="password" id="upPass" name="upPass" autocomplete="new-password"/>
             </div>
             <div class="form-row">
                 <label for="profileImage">Imagen de perfil</label>

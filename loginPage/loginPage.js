@@ -47,9 +47,9 @@ function cargarHTML(isLoggedIn) {
             <form>
                 <h3>Inicia Sesión</h3>
                 <label for="logEmail">Email</label>
-                <input type="text" id="logEmail" name="logEmail" required/>
+                <input type="text" id="logEmail" name="logEmail" autocomplete="username" required/>
                 <label for="logPassword">Contraseña</label>
-                <input type="password" id="logPassword" name="logPassword" required/>
+                <input type="password" id="logPassword" name="logPassword" autocomplete="current-password" required/>
                 <button type="button" id="btnLogin">Inicia Sesión</button>
             </form>
         </section>
