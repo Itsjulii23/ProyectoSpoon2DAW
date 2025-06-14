@@ -4,7 +4,9 @@ ini_set("error_reporting", E_ALL);
 ini_set("display_errors", "on");
 
 require '../src/ConexionPdo.php';
+
 use src\ConexionPdo;
+
 require '../Cifrado.php';
 
 session_start();

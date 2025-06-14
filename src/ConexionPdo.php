@@ -2,7 +2,7 @@
 
 namespace src;
 
-require_once __DIR__ . '/../config.php';  // Ajusta la ruta según corresponda
+require_once __DIR__ . '/../config.php';
 
 use PDO;
 use PDOException;
