@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 window.location.href = "../loginPage/loginPage.html";
                 return;
             }
-            console.log("Sesión iniciada como:", data.usuario);
             window.userId = data.usuario.id;
             cargarHTML();
         })
@@ -115,7 +114,6 @@ function selecthours(event) {
 
     postData("reservas.php", {data: peticion})
         .then((response) => {
-            console.log("Reservas por hora:", response);
             const todasLasHoras = generarHorasDisponibles();
             const horasDisponibles = todasLasHoras.filter(hora => {
                 const reserva = response.find(res => res.hora_reserva.substring(0, 5) === hora);

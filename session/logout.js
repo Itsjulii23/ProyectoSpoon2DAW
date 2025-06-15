@@ -13,7 +13,6 @@ function cerrarSesion() {
         .then(response => response.json())
         .then(data => {
             if (data.status === "ok") {
-                alert(data.message);
                 window.location.href = "../loginPage/loginPage.html";
             }
         })

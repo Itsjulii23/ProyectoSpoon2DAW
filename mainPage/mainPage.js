@@ -216,7 +216,7 @@ function cambiarCategorias() {
         ${window.isLoggedIn ? `<span class="saveRestaurant" id="${restaurante[k].id}"><i class="material-icons">menu_book</i></span>` : ''}
     </h3>
     <p>${restaurante[k].descripcion}</p>
-    <p>
+    git pu<p>
         🕘 Horario:<br>
         📅 Miércoles a domingo<br>
         🍽️ 12:00 - 16:00 / 20:00 - 23:00
@@ -301,7 +301,6 @@ document.addEventListener("click", function (event) {
         peticion.idUser = window.userId;
         peticion.idRestaurante = idRestaurante;
         postData("restaurantes.php", {data: peticion}).then((response) => {
-            console.log(response);
             if (response.status === 'exists') {
                 mostrarModal("Este restaurante ya está en tus favoritos.");
             } else if (response.status === 'ok') {
